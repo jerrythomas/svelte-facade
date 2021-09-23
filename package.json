@@ -1,0 +1,38 @@
+{
+  "name": "svelte-facade",
+  "version": "1.0.0-beta.0",
+  "description": "Facade for svelte component tests",
+  "author": "Jerry Thomas <me@jerrythomas.name>",
+  "license": "MIT",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "uvu -i fixtures spec",
+    "release": "release-it --preRelease=beta",
+    "coverage": "c8 --include src --all pnpm test"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/jsdom": "^16.2.13",
+    "c8": "^7.9.0",
+    "jsdom": "^17.0.0",
+    "release-it": "^14.11.6",
+    "rollup": "^2.57.0",
+    "rollup-plugin-svelte": "^6.1.1",
+    "svelte": "^3.43.0",
+    "uvu": "^0.5.1"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ]
+}

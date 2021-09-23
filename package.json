@@ -1,6 +1,6 @@
 {
   "name": "svelte-facade",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Facade for svelte component tests",
   "author": "Jerry Thomas <me@jerrythomas.name>",
   "license": "MIT",

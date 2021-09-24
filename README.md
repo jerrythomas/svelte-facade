@@ -5,7 +5,7 @@ A minimal facade for testing svelte components borrowed from [lukeed/uvu](https:
 ## Usage
 
 ```bash
-npm i --save-dev svelte-facade
+npm i --save-dev svelte-facade@beta
 ```
 
 In your component tests

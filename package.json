@@ -12,13 +12,18 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "test": "uvu -i fixtures spec",
+		"lint": "eslint src spec",
+		"lint:fix": "eslint --fix src spec",
+    "test": "pnpm lint:fix && uvu -i fixtures spec",
     "release": "release-it --preRelease=beta",
     "coverage": "c8 --include src --all pnpm test"
   },
   "devDependencies": {
     "c8": "^7.9.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "jsdom": "^17.0.0",
+    "prettier": "^2.4.1",
     "release-it": "^14.11.6",
     "svelte": "^3.43.0",
     "typescript": "^4.4.3",

@@ -1,6 +1,6 @@
 {
   "name": "svelte-facade",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "Facade for svelte component tests",
   "author": "Jerry Thomas <me@jerrythomas.name>",
   "license": "MIT",
@@ -12,8 +12,8 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-		"lint": "eslint src spec",
-		"lint:fix": "eslint --fix src spec",
+    "lint": "eslint src spec",
+    "lint:fix": "eslint --fix src spec",
     "test": "pnpm lint:fix && uvu -i fixtures spec",
     "release": "release-it --preRelease=beta",
     "coverage": "c8 --include src --all pnpm test"
